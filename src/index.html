@@ -7,8 +7,18 @@
   </head>
   <body>
     <div id="root">
-      <h1>Hola mundo!</h1>
+      <!--ingreso del texto-->
+    <textarea id="message" name="mensaje" rows="10" cols="40"></textarea>
+    <input id="offset" type="number"  min="1" placeholder="Ingresa el desplazamiento">
+    <button id="encodeButton" type="button" name="button">Cifrar</button>
+    <button id="decodeButton" type="button" name="button">Descifrar</button>
+
+    <!--aquí irá impreso el resultado-->
+    <textarea id="messageResult" name="mensaje" rows="10" cols="40"> </textarea>
+    
     </div>
+
+    <!--link al JS-->
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
