@@ -1,1 +1,36 @@
 /* Acá va tu código */
+body{
+    font-family:"Open Sans";
+    color: 333333;
+    font-size: 24pt;
+}
+.caja-de-texto{
+    border: white;
+    resize: none;
+    outline: none;
+    -webkit-box-shadow: 0px 0px 19px -9px rgba(181,181,181,1);
+    -moz-box-shadow: 0px 0px 19px -9px rgba(181,181,181,1);
+    box-shadow: 0px 0px 19px -9px rgba(181,181,181,1);
+    border-radius: 10px;
+    width: 40%;
+    height: 40%;
+    margin: 10%;
+    padding: 1%;
+}
+
+.boton{
+    background-color:blue;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 0.4em;
+    width: 10%;
+    padding: 0.7%;
+    border-radius: 20px;
+
+}
+
+.boton:hover{
+    background-color:rgb(184, 184, 255);
+    color: rgb(17, 1, 74);
+}
