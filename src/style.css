@@ -1,9 +1,43 @@
 /* Acá va tu código */
 body{
-    font-family:"Open Sans";
+    font-family: 'Roboto';
     color: 333333;
     font-size: 24pt;
 }
+
+.boton-sesion{
+    background-color:blue;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 0.4em;
+    font-weight: 500;
+    width: 10%;
+    margin: 3%;
+    padding: 1%;
+    border-radius: 30px;
+    float: right;
+}
+
+.contenedor-texto {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 5%;
+    width: 100%;
+}
+
+.contendor-mensaje{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+h2{
+    font-size: 0.5em;
+    color: blue;
+    margin: 0 0 10% 0;
+}
+
 .caja-de-texto{
     border: white;
     resize: none;
@@ -12,10 +46,24 @@ body{
     -moz-box-shadow: 0px 0px 19px -9px rgba(181,181,181,1);
     box-shadow: 0px 0px 19px -9px rgba(181,181,181,1);
     border-radius: 10px;
+    padding: 5%;
+}
+
+.contenedor-botones{
+    display: flex;
+    flex-direction: column;
     width: 40%;
-    height: 40%;
-    margin: 10%;
-    padding: 1%;
+    margin: 0 0 0 10%;
+    justify-content: center;
+
+}
+
+.caja-offset{
+    width: 25%;
+    outline: none;
+    margin: 0 0 3% 0;
+    font-size: 0.4em;
+    padding: 2%;
 }
 
 .boton{
@@ -24,13 +72,84 @@ body{
     border: none;
     color: white;
     font-size: 0.4em;
-    width: 10%;
-    padding: 0.7%;
-    border-radius: 20px;
+    font-weight: 500;
+    width: 30%;
+    margin: 3% 0 3% 0;
+    padding: 2%;
+    border-radius: 5px;
 
 }
 
 .boton:hover{
-    background-color:rgb(184, 184, 255);
+    background-color: white;
+    -webkit-box-shadow: 0px 0px 19px -9px rgb(184, 184, 255);
+    -moz-box-shadow: 0px 0px 19px -9px rgb(184, 184, 255);
+    box-shadow: 0px 0px 19px -9px rgb(184, 184, 255);
     color: rgb(17, 1, 74);
+}
+
+.menu-inferior{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    justify-content: space-between;
+    width: 30%;
+    margin: 5%;
+    position: left;
+}
+
+li{
+    color:grey;
+    list-style: none;
+    font-size: 0.5em;
+    font-weight: medium;
+}
+
+li:hover{
+    color: rgb(92, 182, 13);
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(2, 8, 155, 0.8);
+    transition: opacity 200ms;
+    visibility: hidden;
+    opacity: 0;
+}
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+#pop-up{
+    display: flex;
+    justify-content: center;
+}
+#contenido-popup{
+    width: 40%;
+    height: 40%;
+    padding: 2%;
+    margin: auto;
+    border-radius: 15px;
+    border:none;
+    box-shadow: 0 0 10px rgb(1, 5, 29);
+    background: #FFF;
+    transition: all 5s ease-in-out;   
+}
+#cerrar{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #F00;
+}
+
+.respuesta-mensaje{
+    color:grey;
 }

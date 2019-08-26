@@ -7,14 +7,36 @@
   </head>
   <body>
     <div id="root">
+    <header>
+      <button class="boton-sesion" >Cerrar Sesión</button>
+    </header>
       <!--ingreso del texto-->
-    <textarea id="message" class="caja-de-texto" name="mensaje" rows="10" cols="40"></textarea>
-    <input id="offset" type="number"  min="1" placeholder="Ingresa el desplazamiento">
-    <button id="encodeButton" class="boton" type="button" name="button">Cifrar</button>
-    <button id="decodeButton" type="button" name="button">Descifrar</button>
+      <div class="contenedor-mensaje"></div>
+      <h2>Ingresa tu mensaje</h2>
+    </div>
+
+    <div class="contenedor-texto">
+     <textarea id="message" class="caja-de-texto" name="mensaje" rows="10" cols="40"></textarea>
+    <div class="contenedor-botones">
+    <input id="offset" class="caja-offset" type="number"  min="1" placeholder="Ingresa el desplazamiento">
+    <button id="encodeButton" class="boton" type="button" name="button"><a href=#pop-up>Cifrar</a></button>
+    <button id="decodeButton" class="boton" type="button" name="button">Descifrar</button>
+    </div>
+  </div>
 
     <!--aquí irá impreso el resultado-->
-    <textarea id="messageResult" name="mensaje" rows="10" cols="40"> </textarea>
+    <div id="pop-up" class="overlay">
+      <div id="contenido-popup">
+      <p id="messageResult" class="respuesta-mensaje"></p>
+      </div>
+      <div id="cerrar"><a href=index.html>cerrar</a></div>
+    </div>
+
+    <div class="menu-inferior">
+      <li>Instrucciones</li>
+      <li>Seguridad</li>
+      <li>Condiciones</li>
+    <div>
     
     </div>
 
