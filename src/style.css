@@ -1,8 +1,17 @@
 /* Acá va tu código */
+html{
+    width: 100%;
+    height: 100%;
+}
 body{
     font-family: 'Roboto';
     color: 333333;
     font-size: 24pt;
+    background-image: url(https://i.ibb.co/RH2SCMt/bg.png);
+    image-resolution: 300dpi;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 80%;
 }
 
 .logo{
@@ -23,7 +32,7 @@ a:active a:visited a:hover{
 }
 
 .boton-sesion{
-    background-color:#303669;
+    background-image: linear-gradient(to right, rgb(255,117,117), rgb(255,212,85));
     outline: none;
     border: none;
     color: white;
@@ -36,10 +45,6 @@ a:active a:visited a:hover{
     top:4%;
     right: 2%;
 
-}
-
-.boton-sesion{
-    background-image: linear-gradient(to right, rgb(255,117,117), rgb(255,212,85));
 }
 
 .contenedor-mensaje{
@@ -119,7 +124,7 @@ h2{
     text-decoration: none;
     justify-content: space-between;
     width: 25%;
-    margin: 5% 0 5% 2%;
+    margin: 7% 0 5% 3%;
     position: bottom left;
 }
 
