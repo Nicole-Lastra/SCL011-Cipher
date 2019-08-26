@@ -8,35 +8,35 @@
   <body>
     <div id="root">
     <header>
-      <button class="boton-sesion" >Cerrar Sesión</button>
+        <button class="boton-sesion" >Cerrar Sesión</button>
     </header>
       <!--ingreso del texto-->
-      <div class="contenedor-mensaje"></div>
-      <h2>Ingresa tu mensaje</h2>
-    </div>
-
+    <div class="contenedor-mensaje">
+        <h2>Ingresa tu mensaje</h2>
     <div class="contenedor-texto">
-     <textarea id="message" class="caja-de-texto" name="mensaje" rows="10" cols="40"></textarea>
-    <div class="contenedor-botones">
-    <input id="offset" class="caja-offset" type="number"  min="1" placeholder="Ingresa el desplazamiento">
-    <button id="encodeButton" class="boton" type="button" name="button"><a href=#pop-up>Cifrar</a></button>
-    <button id="decodeButton" class="boton" type="button" name="button">Descifrar</button>
+        <textarea id="message" class="caja-de-texto" name="mensaje" rows="10" cols="40"></textarea>
+      <div class="contenedor-botones">
+        <input id="offset" class="caja-offset" type="number"  min="1" placeholder="Ingresa el desplazamiento">
+        <button id="encodeButton" class="boton" type="button" name="button"><a href="#pop-up">Cifrar</a></button>
+        <button id="decodeButton" class="boton" type="button" name="button"><a href="#pop-up">Descifrar</a></button>
     </div>
   </div>
-
+</div>
     <!--aquí irá impreso el resultado-->
     <div id="pop-up" class="overlay">
       <div id="contenido-popup">
+      <img class="candado" src="https://i.ibb.co/9w5MLn5/candado.png" alt="candado" border="0">
       <p id="messageResult" class="respuesta-mensaje"></p>
+      <button id="cerrar"><a href="index.html">Volver</a></button>
       </div>
-      <div id="cerrar"><a href=index.html>cerrar</a></div>
     </div>
 
-    <div class="menu-inferior">
-      <li>Instrucciones</li>
-      <li>Seguridad</li>
-      <li>Condiciones</li>
-    <div>
+    <div class="footer">
+        <li>Instrucciones</li>
+        <li>Seguridad</li>
+        <li>Condiciones</li>
+    </div>
+
     
     </div>
 

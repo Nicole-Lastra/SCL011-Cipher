@@ -5,6 +5,18 @@ body{
     font-size: 24pt;
 }
 
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+
+a:active a:visited a:hover{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+
 .boton-sesion{
     background-color:blue;
     outline: none;
@@ -13,29 +25,37 @@ body{
     font-size: 0.4em;
     font-weight: 500;
     width: 10%;
-    margin: 3%;
     padding: 1%;
     border-radius: 30px;
-    float: right;
+    position: absolute;
+    top:4%;
+    right: 2%;
+
+}
+
+.boton-sesion{
+    background-image: linear-gradient(to right, rgb(255,117,117), rgb(255,212,85));
+}
+
+.contenedor-mensaje{
+    display: flex;
+    flex-direction: column;
+    margin: 8%;
+    width: 100%;
+}
+
+h2{
+    font-size: 0.5em;
+    color: blue;
+    margin: 0 5% 1% 15%;
 }
 
 .contenedor-texto {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin: 5%;
+    margin: 0 5%;
     width: 100%;
-}
-
-.contendor-mensaje{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-}
-h2{
-    font-size: 0.5em;
-    color: blue;
-    margin: 0 0 10% 0;
 }
 
 .caja-de-texto{
@@ -46,7 +66,9 @@ h2{
     -moz-box-shadow: 0px 0px 19px -9px rgba(181,181,181,1);
     box-shadow: 0px 0px 19px -9px rgba(181,181,181,1);
     border-radius: 10px;
-    padding: 5%;
+    padding: 3%;
+    font-size: 0.5em;
+    color: #333333;
 }
 
 .contenedor-botones{
@@ -81,33 +103,30 @@ h2{
 }
 
 .boton:hover{
-    background-color: white;
-    -webkit-box-shadow: 0px 0px 19px -9px rgb(184, 184, 255);
-    -moz-box-shadow: 0px 0px 19px -9px rgb(184, 184, 255);
-    box-shadow: 0px 0px 19px -9px rgb(184, 184, 255);
-    color: rgb(17, 1, 74);
+    background-image: linear-gradient(to right, rgb(255,117,117), rgb(255,212,85));
 }
 
-.menu-inferior{
+.footer{
     display: flex;
     flex-direction: row;
     text-decoration: none;
     justify-content: space-between;
-    width: 30%;
-    margin: 5%;
-    position: left;
+    width: 25%;
+    margin: 5% 0 5% 2%;
+    position: bottom left;
 }
 
 li{
     color:grey;
     list-style: none;
-    font-size: 0.5em;
+    font-size: 0.45em;
     font-weight: medium;
 }
 
 li:hover{
-    color: rgb(92, 182, 13);
+    color:#ff7575;
 }
+
 
 .overlay {
     position: fixed;
@@ -137,19 +156,38 @@ li:hover{
     border:none;
     box-shadow: 0 0 10px rgb(1, 5, 29);
     background: #FFF;
-    transition: all 5s ease-in-out;   
-}
-#cerrar{
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    transition: all 200ms;
-    font-size: 30px;
-    font-weight: bold;
-    text-decoration: none;
-    color: #F00;
+    transition: all 5s ease-in-out;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
 }
 
 .respuesta-mensaje{
     color:grey;
+    font-size: 20px;
+    font-weight: normal;
+    text-align: center;
+}
+
+#cerrar{
+    justify-content: center;
+    background-color:blue;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 0.4em;
+    font-weight: 500;
+    width: 30%;
+    margin: auto auto 3% auto;
+    padding: 2%;
+    border-radius: 5px;
+}
+
+#cerrar:hover{
+    background-image: linear-gradient(to right, rgb(255,117,117), rgb(255,212,85));
+}
+.candado{
+    width: 10%;
+    height: 23.5%;
+    margin: auto;
 }
