@@ -31,7 +31,7 @@
 ##Wireframes
 - **Primeros acercamientos de diseño**
 
-[wireframe](https://i.ibb.co/s1r3Kf7/IMG-9695.jpg)
+![wireframe](https://i.ibb.co/s1r3Kf7/IMG-9695.jpg)
 
 
 #### Acerca del diseño
@@ -50,7 +50,7 @@ La interfaz debe permite al usuario:
 - Insertar un mensaje (texto) a descifrar.
 - Ver el resultado del mensaje descifrado.
 
-[vista_de_interfaz](https://i.ibb.co/Xz8pg5k/Captura-de-pantalla-2019-08-26-a-la-s-03-18-28.png)
+![interfaz](https://i.ibb.co/Xz8pg5k/Captura-de-pantalla-2019-08-26-a-la-s-03-18-28.png)
 
 
 #### Consideraciones del diseño y Testeo
