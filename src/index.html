@@ -2,11 +2,12 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Caesar Cipher</title>
+    <title>VirtualBank</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div id="root">
+    <img class="logo" src="https://i.ibb.co/n1fYnYD/Logo.png" alt="Logo" border="0">
     <header>
         <button class="boton-sesion" >Cerrar Sesión</button>
     </header>
@@ -16,7 +17,7 @@
     <div class="contenedor-texto">
         <textarea id="message" class="caja-de-texto" name="mensaje" rows="10" cols="40"></textarea>
       <div class="contenedor-botones">
-        <input id="offset" class="caja-offset" type="number"  min="1" placeholder="Ingresa el desplazamiento">
+        <input id="offset" class="caja-offset" type="number"  min="1" placeholder="Ingresa tu Código">
         <button id="encodeButton" class="boton" type="button" name="button"><a href="#pop-up">Cifrar</a></button>
         <button id="decodeButton" class="boton" type="button" name="button"><a href="#pop-up">Descifrar</a></button>
     </div>
@@ -25,7 +26,7 @@
     <!--aquí irá impreso el resultado-->
     <div id="pop-up" class="overlay">
       <div id="contenido-popup">
-      <img class="candado" src="https://i.ibb.co/9w5MLn5/candado.png" alt="candado" border="0">
+      <img class="candado" src="https://i.ibb.co/n1fYnYD/Logo.png" alt="candado" border="0">
       <p id="messageResult" class="respuesta-mensaje"></p>
       <button id="cerrar"><a href="index.html">Volver</a></button>
       </div>

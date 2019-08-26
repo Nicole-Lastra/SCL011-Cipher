@@ -5,6 +5,11 @@ body{
     font-size: 24pt;
 }
 
+.logo{
+    width: 15%;
+    margin: 1%;
+}
+
 a{
     text-decoration: none;
     color: white;
@@ -18,7 +23,7 @@ a:active a:visited a:hover{
 }
 
 .boton-sesion{
-    background-color:blue;
+    background-color:#303669;
     outline: none;
     border: none;
     color: white;
@@ -40,13 +45,13 @@ a:active a:visited a:hover{
 .contenedor-mensaje{
     display: flex;
     flex-direction: column;
-    margin: 8%;
+    margin: 5%;
     width: 100%;
 }
 
 h2{
     font-size: 0.5em;
-    color: blue;
+    color:#303669;
     margin: 0 5% 1% 15%;
 }
 
@@ -62,8 +67,6 @@ h2{
     border: white;
     resize: none;
     outline: none;
-    -webkit-box-shadow: 0px 0px 19px -9px rgba(181,181,181,1);
-    -moz-box-shadow: 0px 0px 19px -9px rgba(181,181,181,1);
     box-shadow: 0px 0px 19px -9px rgba(181,181,181,1);
     border-radius: 10px;
     padding: 3%;
@@ -86,10 +89,14 @@ h2{
     margin: 0 0 3% 0;
     font-size: 0.4em;
     padding: 2%;
+    border: none;
+    border-bottom: 2px solid #303669;
+    color:  #303669;
+    font-weight: 700;
 }
 
 .boton{
-    background-color:blue;
+    background-color: #303669;
     outline: none;
     border: none;
     color: white;
@@ -117,7 +124,7 @@ h2{
 }
 
 li{
-    color:grey;
+    color:#303669;
     list-style: none;
     font-size: 0.45em;
     font-weight: medium;
@@ -134,7 +141,7 @@ li:hover{
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(2, 8, 155, 0.8);
+    background: rgba(48, 54, 105, 0.9);
     transition: opacity 200ms;
     visibility: hidden;
     opacity: 0;
@@ -171,7 +178,7 @@ li:hover{
 
 #cerrar{
     justify-content: center;
-    background-color:blue;
+    background-color:#303669;
     outline: none;
     border: none;
     color: white;
@@ -187,7 +194,6 @@ li:hover{
     background-image: linear-gradient(to right, rgb(255,117,117), rgb(255,212,85));
 }
 .candado{
-    width: 10%;
-    height: 23.5%;
+    height: 20%;
     margin: auto;
 }
